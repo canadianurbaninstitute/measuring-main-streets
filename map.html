@@ -7,18 +7,18 @@
 		<title>Measuring Main Streets</title>
 		
 		<link href="./_app/immutable/assets/0.8ec064dd.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/10.a854c9d9.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/10.458d32e8.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/styles.7b802e5f.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/Legend.1bf54bae.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.8138bfa1.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.b2c116c7.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.33e32cf3.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.ec09cfaf.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.b96e29d3.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.5b97d4ec.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.c05ff402.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.b2edcf94.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.307578e7.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.dc580506.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.ee171b11.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.7d0a7a34.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Icon.a5a3afcc.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/10.d945118b.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/10.0b4b9e2b.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Legend.a0bd7103.js"><!-- HEAD_svelte-1d53c28_START --><link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet"><script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script><link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css"><!-- HEAD_svelte-1d53c28_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -37,25 +37,28 @@
 
 
 
-<div id="map-container" class="svelte-1l0bqws"><div id="sidebar" class="svelte-1l0bqws"><h5>Click on a street segment on the map to view information.</h5>
-		<hr class="svelte-1l0bqws">
-		<h2>Canada</h2>
+<div id="map-container" class="svelte-11jc1tc"><div id="sidebar" class="svelte-11jc1tc"><h5>Click on a street segment on the map to view information.</h5>
+		<hr class="svelte-11jc1tc">
+		<h2 class="svelte-11jc1tc">Canada</h2>
 		<h5>Main Streets</h5>
-		<hr class="svelte-1l0bqws">
-		<div class="metric svelte-1l0bqws">Amenity Score: </div>
-		<hr class="svelte-1l0bqws">
-		<div class="metric svelte-1l0bqws">Population: 
+		<hr class="svelte-11jc1tc">
+		<div class="metric svelte-11jc1tc">Amenity Score: </div>
+		<hr class="svelte-11jc1tc">
+		<div class="metric svelte-11jc1tc">Population: 
 			</div>
-		<div class="metric svelte-1l0bqws"># of Employees: 
+		<div class="metric svelte-11jc1tc"># of Employees: 
 			</div>
-		<hr class="svelte-1l0bqws">
-		<div class="metric svelte-1l0bqws">Business Independence Index: 
+		<hr class="svelte-11jc1tc">
+		<div class="metric svelte-11jc1tc">Recent Immigrants: 0% </div>
+		<div class="metric svelte-11jc1tc">Visible Minorities: 0% </div>
+		<hr class="svelte-11jc1tc">
+		<div class="metric svelte-11jc1tc">Business Independence Index: 
 			</div>
-		<hr class="svelte-1l0bqws">
-		<div class="metric svelte-1l0bqws">Apartments: 0% </div>
-		<div class="metric svelte-1l0bqws">Single Detached: 0% </div></div>
-	<div id="map" class="svelte-1l0bqws"></div>
-	<div id="legend" class="svelte-1l0bqws"><div id="legend" class="legend svelte-13g4v6z"><div class="gradient-container svelte-13g4v6z"><div class="regular-item svelte-13g4v6z">Business Density</div>
+		<hr class="svelte-11jc1tc">
+		<div class="metric svelte-11jc1tc">Apartments: 0% </div>
+		<div class="metric svelte-11jc1tc">Single Detached: 0% </div></div>
+	<div id="map" class="svelte-11jc1tc"></div>
+	<div id="legend" class="svelte-11jc1tc"><div id="legend" class="legend svelte-13g4v6z"><div class="gradient-container svelte-13g4v6z"><div class="regular-item svelte-13g4v6z">Business Density</div>
   <div class="gradient-box svelte-13g4v6z" style="background:linear-gradient(to right, #cceffe, #99dffc, #34bef9, #018bc6, #004663)"></div>
   <span class="minlabel svelte-13g4v6z">Low</span>
   <span class="maxlabel svelte-13g4v6z">High</span></div>
@@ -66,7 +69,7 @@
 			
 			<script>
 				{
-					__sveltekit_xe3d0z = {
+					__sveltekit_1qi50qb = {
 						assets: "/rki-app",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
@@ -77,8 +80,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.8138bfa1.js"),
-						import("./_app/immutable/entry/app.b2edcf94.js")
+						import("./_app/immutable/entry/start.b2c116c7.js"),
+						import("./_app/immutable/entry/app.ee171b11.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 10],
