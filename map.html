@@ -7,18 +7,18 @@
 		<title>Measuring Main Streets</title>
 		
 		<link href="./_app/immutable/assets/0.8ec064dd.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/8.458d32e8.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/8.1353f777.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/styles.7b802e5f.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/mapbox-gl.1bf54bae.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.5979b827.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.01e435b5.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.4dd7418a.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.bf53c4b4.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.e1597c41.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.b26fe15c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/paths.ac161fe0.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.bfa7f51c.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.9233f7e9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.6c3193a6.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.9290ba65.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.a72968c7.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/Icon.ca1a9f14.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/8.ddc8c53f.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/8.d12196f1.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/mapbox-gl.09742dd5.js"><!-- HEAD_svelte-1d53c28_START --><link href="https://api.mapbox.com/mapbox-gl-js/v2.14.1/mapbox-gl.css" rel="stylesheet"><script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.min.js"></script><link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v5.0.0/mapbox-gl-geocoder.css" type="text/css"><!-- HEAD_svelte-1d53c28_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
@@ -44,19 +44,29 @@
 		<hr class="svelte-11jc1tc">
 		<div class="metric svelte-11jc1tc">Amenity Score: </div>
 		<hr class="svelte-11jc1tc">
-		<div class="metric svelte-11jc1tc">Population: 
-			</div>
-		<div class="metric svelte-11jc1tc"><div> # of Employees: </div>
-			</div>
+		<div class="metric svelte-1jelvro">Population: </div>
+		<div class="metric svelte-1jelvro">Employees: </div>
 		<hr class="svelte-11jc1tc">
-		<div class="metric svelte-11jc1tc">Recent Immigrants: 0% </div>
-		<div class="metric svelte-11jc1tc">Visible Minorities: 0% </div>
+		<div class="metric svelte-1jelvro">Civic Infrastructure: </div>
+		<div class="metric svelte-1jelvro">Businesses: </div>
+		<div class="metric svelte-1jelvro">Business Independence Index: </div>
 		<hr class="svelte-11jc1tc">
-		<div class="metric svelte-11jc1tc">Business Independence Index: 
-			</div>
+		<div class="metric svelte-1jelvro">Average Income: $</div>
+		<div class="metric svelte-1jelvro">% of Population with Bachelors: %</div>
+		<div class="metric svelte-1jelvro">Average Age: </div>
 		<hr class="svelte-11jc1tc">
-		<div class="metric svelte-11jc1tc">Apartments: 0% </div>
-		<div class="metric svelte-11jc1tc">Single Detached: 0% </div></div>
+		<div class="metric svelte-1jelvro">Recent Immigrants: %</div>
+		<div class="metric svelte-1jelvro">Visible Minorities: %</div>
+		<div class="metric svelte-1jelvro">Indigenous: %</div>
+		<hr class="svelte-11jc1tc">
+		<div class="metric svelte-1jelvro">Car: %</div>
+		<div class="metric svelte-1jelvro">Public Transit: %</div>
+		<div class="metric svelte-1jelvro">Active Transit: %</div>
+		<hr class="svelte-11jc1tc">
+		<div class="metric svelte-1jelvro">Dwellings: </div>
+		<hr class="svelte-11jc1tc">
+		<div class="metric svelte-1jelvro">English Speakers: %</div>
+		<div class="metric svelte-1jelvro">French Speakers: %</div></div>
 	<div id="map" class="svelte-11jc1tc"></div>
 	<div id="legend" class="svelte-11jc1tc"><div id="legend" class="legend svelte-13g4v6z"><div class="gradient-container svelte-13g4v6z"><div class="regular-item svelte-13g4v6z">Business Density</div>
   <div class="gradient-box svelte-13g4v6z" style="background:linear-gradient(to right, #cceffe, #99dffc, #34bef9, #018bc6, #004663)"></div>
@@ -69,7 +79,7 @@
 			
 			<script>
 				{
-					__sveltekit_15um2uo = {
+					__sveltekit_85r1ni = {
 						assets: "/measuring-main-streets",
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
@@ -80,8 +90,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.5979b827.js"),
-						import("./_app/immutable/entry/app.bfa7f51c.js")
+						import("./_app/immutable/entry/start.01e435b5.js"),
+						import("./_app/immutable/entry/app.9290ba65.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 8],
